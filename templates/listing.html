@@ -1,0 +1,17 @@
+{% extends 'incl/base_log.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-8">
+        <div class="row title">
+            <div class="col-4">
+                <h3>Tag: bubiba</h3>
+            </div>
+
+        </div>
+        {% for question in questions %}
+            {% include "incl/single_question.html" %}
+        {% endfor %}
+        {% include "incl/pagination.html" %}
+    </div>
+{% endblock content %}

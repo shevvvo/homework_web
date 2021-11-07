@@ -1,0 +1,25 @@
+{% extends "incl/base_no_log.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="col-8">
+        <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+            <h4>Log in</h4>
+        </div>
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" placeholder="hibro@yoyyoyo.bro" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" placeholder="ur password bro" id="inputPassword3">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% load static %}
+
+<div class="row question">
+    <div class="col-3">
+        <img src="{% static "img/1.jpg" %}" class="img">
+    </div>
+    <div class="col-9">
+        <a href="{% url "one_question" %}"><h2>{{ question.title }}</h2></a>
+        <div>
+            {{ question.text }}
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <a href="{% url "one_question" %}">answer(3)</a>
+            </div>
+            <div class="col-4">
+                Tags:<a href="{% url "tag" %}">big baby</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            <div style="border: 1px grey solid; padding: 3px; text-align: center; margin: 0;">
+                <div>
+                    5
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-outline-success"
+                    style="padding: 3px 5px;text-align: center; margin-left: -20px;">+
+            </button>
+            <button type="button" class="btn btn-outline-danger"
+                    style="padding: 3px 5px;text-align: center; margin-left: 0;">-
+            </button>
+        </div>
+    </div>
+</div>

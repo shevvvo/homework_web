@@ -1,0 +1,71 @@
+{% extends "incl/base_no_log.html" %}
+{% load static %}
+
+{% block content %}
+            <div class="col-8">
+                <div class="row">
+                    <h3>Registration</h3>
+                </div>
+                <div class="row">
+                    <h5 style="color: #a52834">Sorry, this email is already registered</h5>
+                </div>
+                <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                    <div class="col-2">
+                        Login
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control form-control-sm" type="text" placeholder="pupa" aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                    <div class="col-2">
+                        Email
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control form-control-sm" type="text" placeholder="pupa@yandex.ru" aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                    <div class="col-2">
+                        Nickname
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control form-control-sm" type="text" placeholder="pupa22" aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-4">
+                        <input type="password" style="height: 30px" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Repeat</label>
+                    <div class="col-sm-4">
+                        <input type="password" style="height: 30px" class="form-control" id="repeatPassword">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                    <div class="col-2">
+                        Avatar
+                    </div>
+                    <div class="col-2">
+                        <div style="border: 2px grey solid;">
+                            C:\avatar.jpg
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-info" style="height: 31px; padding: 5px;">Upload</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-info" style="height: 31px; padding: 5px;">Register</button>
+                    </div>
+                </div>
+            </div>
+
+ {% endblock content %}

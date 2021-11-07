@@ -1,0 +1,21 @@
+{% extends 'incl/base_no_log.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-8">
+        <div class="row title">
+            <div class="col-4">
+                <h3>New questions</h3>
+            </div>
+            <div class="col-4">
+                <h3><a href="{% url "hot" %}">Hot questions</a></h3>
+            </div>
+        </div>
+        {% for question in questions %}
+            {% include "incl/single_question.html" %}
+        {% endfor %}
+        {% include "incl/pagination.html" %}
+
+    </div>
+
+{% endblock content %}
